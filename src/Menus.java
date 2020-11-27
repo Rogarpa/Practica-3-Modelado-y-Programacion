@@ -22,6 +22,11 @@ public class Menus{
                 default:
                 break;
             }
+
+            System.out.println("**************************************************************************************************************************");
+            System.out.println("**************************************************************************************************************************");
+            System.out.println("**************************************************************************************************************************");
+            System.out.println("**************************************************************************************************************************");
         } while (indice != 0);
     }
 
@@ -51,11 +56,12 @@ public class Menus{
             break;
         }
 
+        System.out.println("\n\n");
         System.out.println("El auto escogido fue el siguiente :");
         System.out.println(presupuestado.getDescripcion());
 
         if(presupuestado.getCosto() > dinero)
-            System.out.println("El auto que escogió excede su presupuesto");
+            System.out.println("El auto que escogió excede su presupuesto de $" + dinero);
 
     }
 
@@ -70,7 +76,7 @@ public class Menus{
 
         int dinero = 0;
         System.out.println("///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
-        System.out.println("//////////////////////////////////////////////////Bienvenido al presupuestador/////////////////////////////////////////////////");
+        System.out.println("//////////////////////////////////////////////////Bienvenido al muestrario de diseños fijos de autos de Mad Max/////////////////////////////////////////////////");
 
         System.out.println("0.-The Ripper");
         System.out.println("1.-The Furnace");
@@ -105,7 +111,7 @@ public class Menus{
 
         int dinero = 0;
         System.out.println("///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
-        System.out.println("//////////////////////////////////////////////////Bienvenido al presupuestador/////////////////////////////////////////////////");
+        System.out.println("//////////////////////////////////////////////////Bienvenido al diseñador de autos de Mad Max personalizados/////////////////////////////////////////////////");
 
 
         System.out.println("0.-");
@@ -134,6 +140,7 @@ public class Menus{
             case 3:
             builderDeAutosMadMax.escogerLlantas(new LlantasOrugaDeTanque());
             break;
+
             default:
             break;
         }
@@ -240,7 +247,7 @@ public class Menus{
             System.out.println(indicacion);
             if(scn.hasNextInt()){
                 num=scn.nextInt();
-                if(num>=limiteInferior||num<=limiteSuperior) c=false;
+                if(num>=limiteInferior && num<=limiteSuperior) c=false;
             }
             else{
                 scn.next();
