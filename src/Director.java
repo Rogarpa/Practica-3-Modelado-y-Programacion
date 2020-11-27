@@ -48,7 +48,7 @@ public class Director{
         builder.Motor(Motor.MotorTurbo);
         builder.Carroceria(Carroceria.CarroceriaDeportiva);
         builder.Blindaje(Blindaje.BlindajeSimple);
-        builder.Armas(Armas.ArmasMetralleta)
+        builder.Armas(Armas.ArmasMetralleta);
     }
 
     /**

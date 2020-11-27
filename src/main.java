@@ -1,12 +1,12 @@
-import java.lang.module.ModuleDescriptor.Builder;
+import java.util.*;
 
 public class main{
 
     public static void main(String[] args){
-        
-        
+
+
     }
-    
+
     //FALTA DOCUMENTAR
     public void desplegarMenuBienvenida(){
         int indice = 0;
@@ -29,24 +29,25 @@ public class main{
     }
 
     public void desplegarMenuPresupuesto(){
+        int indice=0;
         int dinero = 0;
         AutoMadMax presupuestado;
         System.out.println("///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
         System.out.println("//////////////////////////////////////////////////Bienvenido al presupuestador/////////////////////////////////////////////////");
-        
+
             System.out.println("Digite su cantidad de dinero disponible para el auto");
 
             dinero = getint("Digite su cantidad y presione enter:","Entrada invalida.");
-            
-    
+
+
             System.out.println("0.-Escoger diseño fijos de Mad Max");
             System.out.println("1.-Escoger diseño personalizado inspirado en Mad Max");
-    
+
             indice = getint("Digite el numero de la opcion y presione enter:","No es un numero valido.", 0, 1);
             switch(indice){
                 case 0:
                     presupuestado = desplegarMenuDiseñoFijo();
-                    break;                    
+                    break;
                 case 1:
                     presupuestado = desplegarMenuDiseñoPersonalizado();
                 default:
@@ -54,14 +55,15 @@ public class main{
             }
 
 
-        
+
     }
 
     public AutoMadMax desplegarMenuDiseñoFijo(){
         BuilderAutos builderDeAutosMadMax = new BuilderAutosMadMax();
-        
+
         Director constructorDiseñosPredeterminados = new Director(b);
-        
+
+        int indice=0;
         int dinero = 0;
         System.out.println("///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
         System.out.println("//////////////////////////////////////////////////Bienvenido al presupuestador/////////////////////////////////////////////////");
@@ -81,7 +83,7 @@ public class main{
                     break;
                 case 2:
                     constructorDiseñosPredeterminados.theDieRolla();
-                    return builderDeAutosMadMax.getAutoMadMax();    
+                    return builderDeAutosMadMax.getAutoMadMax();
                     break;
                 case 3:
                     constructorDiseñosPredeterminados.theDeathRattle();
@@ -89,18 +91,19 @@ public class main{
                     break;
                 default:
                     break;
-                
-        
+                }
+
     }
 
     public AutoMadMax desplegarMenuDiseñoPersonalizado(){
+        int indice=0;
         int dinero = 0;
         System.out.println("///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
         System.out.println("//////////////////////////////////////////////////Bienvenido al presupuestador/////////////////////////////////////////////////");
-        
+
 
             System.out.println("0.-Escoger diseños fijos");
-            System.out.println("1.-Escoger diseño personalizado");    
+            System.out.println("1.-Escoger diseño personalizado");
             indice = getint("Digite el numero de la opcion y presione enter:","No es un numero valido.", 0, 1);
             switch(indice){
                 case 0:
@@ -111,7 +114,7 @@ public class main{
                     break;
             }
 
-        
+
     }
 
     /**
@@ -126,7 +129,7 @@ public class main{
         int num=0;
         boolean c=true;
         Scanner scn=new Scanner(System.in);
-        
+
         do{
             System.out.println(indicacion);
             if(scn.hasNextInt()){
@@ -151,12 +154,12 @@ public class main{
         int num=0;
         boolean c=true;
         Scanner scn=new Scanner(System.in);
-        
+
         do{
             System.out.println(indicacion);
             if(scn.hasNextInt()){
                 num=scn.nextInt();
-                c=false;                            
+                c=false;
             }
             else{
                 scn.next();
