@@ -3,3 +3,5 @@ CambiosADiagramar:
 Llantas,etc no es abstract.
 
 getAutoMadMax
+
+AutoMadMax poner los getDescripcion y getCosto,Ataque,Defensa,Velocidad.

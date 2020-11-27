@@ -1,4 +1,14 @@
 public class MotorTurbo extends Motor{
+
+    /**
+    *Constructor de la clase.
+    */
+    public MotorTurbo(){
+        ataque = 2;
+        defensa = 2;
+        velocidad =2;
+        costo = 2;
+    }
     @Override
     public int getAtaque(){return ataque;}
     @Override
