@@ -1,6 +1,10 @@
 public class BuilderAutosMadMax implements BuilderAutos{
     protected AutoMadMax autoADiseñar;
 
+    public AutoMadMax getAutoMadMax(){
+        return autoADiseñar;
+    }
+
     @Override
     public void escogerLlantas(Llantas llantas){
         autoADiseñar.setLlantas(llantas);

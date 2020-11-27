@@ -1,4 +1,15 @@
 public class LlantasSimple extends Llantas{
+    
+    /**
+     * Instancia las propiedades que aporta a un armado la llantas simple.
+     */
+    public LlantasSimple(){
+        ataque = 2;
+        defensa = 2;
+        velocidad = 2;
+        costo = 2;
+    }
+
     @Override
     public int getAtaque(){return ataque;}
     @Override

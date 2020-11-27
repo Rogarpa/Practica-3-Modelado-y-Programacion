@@ -1,4 +1,15 @@
 public class LlantasDeportiva extends Llantas{
+
+    /**
+     * Instancia las propiedades que aporta a un armado la llantas deportiva.
+     */
+    public LlantasDeportiva(){
+        ataque = 2;
+        defensa = 2;
+        velocidad = 2;
+        costo = 2;
+    }
+
     @Override
     public int getAtaque(){return ataque;}
     @Override

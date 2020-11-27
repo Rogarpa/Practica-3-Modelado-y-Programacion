@@ -1,0 +1,5 @@
+CambiosADiagramar:
+
+Llantas,etc no es abstract.
+
+getAutoMadMax

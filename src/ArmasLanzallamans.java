@@ -1,4 +1,4 @@
-public class ArmasLanzallamans extends Arma{
+public class ArmasLanzallamans extends Armas{
     @Override
     public int getAtaque(){return ataque;}
     @Override
