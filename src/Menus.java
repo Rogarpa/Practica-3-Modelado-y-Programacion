@@ -45,7 +45,11 @@ public class Menus{
             break;
         }
         
+        System.out.println("El auto escogido fue el siguiente :");
+        System.out.println(presupuestado.getDescripcion());
         
+        if(presupuestado.getCosto() < dinero) 
+            System.out.println("El auto que escogió excede su presupuesto");
         
     }
     
