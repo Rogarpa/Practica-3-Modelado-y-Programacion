@@ -3,3 +3,6 @@ CambiosADiagramar:
 Llantas,etc no es abstract.
 
 getAutoMadMax
+
+AutoMadMax poner los getDescripcion y getCosto,Ataque,Defensa,Velocidad.
+Director metodos "Director",el constructor, y el metodo cambairBuilder ambos reciben un BuilderAutosMadMax.
