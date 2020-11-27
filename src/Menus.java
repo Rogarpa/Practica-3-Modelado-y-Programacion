@@ -203,8 +203,7 @@ public class Menus{
         System.out.println("2.-Cañones");
         System.out.println("3.-Sierra");
         System.out.println("4.-Metralleta ");
-        System.out.println("5.-");
-        indice = getint("Digite el numero de la opcion y presione enter:","No es un numero valido.", 0, 5);
+        indice = getint("Digite el numero de la opcion y presione enter:","No es un numero valido.", 0, 4);
 
         switch(indice){
             case 0:
