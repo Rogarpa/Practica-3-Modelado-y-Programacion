@@ -2,6 +2,9 @@ import java.util.*;
 
 public class Menus{
 
+    /**
+    *Metodo para desplegar menu de Bienvenida.
+    */
     public void desplegarMenuBienvenida(){
         int indice = 0;
         System.out.println("///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
@@ -56,6 +59,9 @@ public class Menus{
 
     }
 
+    /**
+    *Menu para desplegar,cuando el usuario quiera usar algun auto predefinido.
+    */
     public AutoMadMax desplegarMenuDiseñoFijo(){
         int indice=0;
         BuilderAutosMadMax builderDeAutosMadMax = new BuilderAutosMadMax();
@@ -90,6 +96,9 @@ public class Menus{
 
     }
 
+    /*
+    *Menu que se despliega cuando el usuario quiere personalizar su propio coche.
+    */
     public AutoMadMax desplegarMenuDiseñoPersonalizado(){
         int indice=0;
         BuilderAutosMadMax builderDeAutosMadMax = new BuilderAutosMadMax();
