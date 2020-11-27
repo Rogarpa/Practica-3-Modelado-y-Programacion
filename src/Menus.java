@@ -25,7 +25,7 @@ public class Menus{
     public void desplegarMenuPresupuesto(){
         int indice=0;
         int dinero = 0;
-        AutoMadMax presupuestado;
+        AutoMadMax presupuestado = null;
         System.out.println("///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
         System.out.println("//////////////////////////////////////////////////Bienvenido al presupuestador/////////////////////////////////////////////////");
 
@@ -51,14 +51,14 @@ public class Menus{
         System.out.println("El auto escogido fue el siguiente :");
         System.out.println(presupuestado.getDescripcion());
 
-        if(presupuestado.getCosto() < dinero)
+        if(presupuestado.getCosto() > dinero)
             System.out.println("El auto que escogió excede su presupuesto");
 
     }
 
     public AutoMadMax desplegarMenuDiseñoFijo(){
         int indice=0;
-        BuilderAutos builderDeAutosMadMax = new BuilderAutosMadMax();
+        BuilderAutosMadMax builderDeAutosMadMax = new BuilderAutosMadMax();
 
         Director constructorDiseñosPredeterminados = new Director(builderDeAutosMadMax);
 
@@ -92,7 +92,7 @@ public class Menus{
 
     public AutoMadMax desplegarMenuDiseñoPersonalizado(){
         int indice=0;
-        BuilderAutos builderDeAutosMadMax = new BuilderAutosMadMax();
+        BuilderAutosMadMax builderDeAutosMadMax = new BuilderAutosMadMax();
 
         int dinero = 0;
         System.out.println("///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");

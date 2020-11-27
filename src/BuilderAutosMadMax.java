@@ -1,6 +1,11 @@
 public class BuilderAutosMadMax implements BuilderAutos{
     protected AutoMadMax autoADiseñar;
 
+
+    public BuilderAutosMadMax(){
+        autoADiseñar = new AutoMadMax();
+    }
+    
     public AutoMadMax getAutoMadMax(){
         return autoADiseñar;
     }
