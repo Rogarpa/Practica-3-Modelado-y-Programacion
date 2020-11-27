@@ -5,8 +5,6 @@ public class main{
         Menus m = new Menus();
         m.desplegarMenuBienvenida();
     }
-    
-    //FALTA DOCUMENTAR
 
     
 }

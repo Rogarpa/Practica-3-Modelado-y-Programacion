@@ -22,6 +22,7 @@ public class Director{
     *Coche ya predefinido.
     */
     public void theRipper(){
+        /**
         builder.Llantas(Llantas.LlantasSimple);
         builder.Motor(Motor.Deportivo);
         builder.Carroceria(Carroceria.CarroceriaCasual);
@@ -48,7 +49,7 @@ public class Director{
         builder.Motor(Motor.MotorTurbo);
         builder.Carroceria(Carroceria.CarroceriaDeportiva);
         builder.Blindaje(Blindaje.BlindajeSimple);
-        builder.Armas(Armas.ArmasMetralleta)
+        builder.Armas(Armas.ArmasMetralleta);
     }
 
     /**
