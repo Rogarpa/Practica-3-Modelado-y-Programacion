@@ -30,6 +30,9 @@ public class Menus{
         } while (indice != 0);
     }
 
+    /**
+     * Se encarga de desplegar el menu presupuestador.
+     */
     public void desplegarMenuPresupuesto(){
         int indice=0;
         int dinero = 0;
@@ -113,19 +116,11 @@ public class Menus{
         System.out.println("///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
         System.out.println("//////////////////////////////////////////////////Bienvenido al diseñador de autos de Mad Max personalizados/////////////////////////////////////////////////");
 
-
-        System.out.println("0.-");
-        System.out.println("1.-");
-        System.out.println("2.-");
-        System.out.println("3.-");
-        System.out.println("4.-");
-        System.out.println("5.-");
-        System.out.println("6.-");
-
-        System.out.println("0.-");
-        System.out.println("1.-");
-        System.out.println("2.-");
-        System.out.println("3.-");
+        System.out.println("Escoga las llantas que tendrá su auto de Mad Max");
+        System.out.println("0.-Llantas simples");
+        System.out.println("1.-Llantas deportivas");
+        System.out.println("2.-Llantas Off Road");
+        System.out.println("3.-Llantas de oruga de tanque");
         indice = getint("Digite el numero de la opcion y presione enter:","No es un numero valido.", 0, 3);
 
         switch(indice){
@@ -144,10 +139,11 @@ public class Menus{
             default:
             break;
         }
-
-        System.out.println("0.-");
-        System.out.println("1.-");
-        System.out.println("2.-");
+        
+        System.out.println("Escoga el motor que tendrá su auto de Mad Max");
+        System.out.println("0.-Motor deportivo");
+        System.out.println("1.-Motor a diesel");
+        System.out.println("2.-Motor turbo");
         indice = getint("Digite el numero de la opcion y presione enter:","No es un numero valido.", 0, 2);
 
         switch(indice){
@@ -162,10 +158,11 @@ public class Menus{
             default:
             break;
         }
-
-        System.out.println("0.-");
-        System.out.println("1.-");
-        System.out.println("2.-");
+        
+        System.out.println("Escoga la carrocería que tendrá su auto de Mad Max");
+        System.out.println("0.-Carrocería casual");
+        System.out.println("1.-Carrocería de camión");
+        System.out.println("2.-Carrocería deportiva");
         indice = getint("Digite el numero de la opcion y presione enter:","No es un numero valido.", 0, 2);
 
         switch(indice){
@@ -180,10 +177,11 @@ public class Menus{
             default:
             break;
         }
-
-        System.out.println("0.-");
-        System.out.println("1.-");
-        System.out.println("2.-");
+        
+        System.out.println("Escoga las llantas que tendrá su auto de Mad Max");
+        System.out.println("0.-Blindaje simple");
+        System.out.println("1.-Blindaje reforzado");
+        System.out.println("2.-Blindaje de tanque");
         indice = getint("Digite el numero de la opcion y presione enter:","No es un numero valido.", 0, 2);
 
         switch(indice){
@@ -198,12 +196,13 @@ public class Menus{
             default:
             break;
         }
-
-        System.out.println("0.-");
-        System.out.println("1.-");
-        System.out.println("2.-");
-        System.out.println("3.-");
-        System.out.println("4.-");
+    
+        System.out.println("Escoga las llantas que tendrá su auto de Mad Max");
+        System.out.println("0.-Arpones");
+        System.out.println("1.-Lanzallamas");
+        System.out.println("2.-Cañones");
+        System.out.println("3.-Sierra");
+        System.out.println("4.-Metralleta ");
         System.out.println("5.-");
         indice = getint("Digite el numero de la opcion y presione enter:","No es un numero valido.", 0, 5);
 
@@ -212,16 +211,15 @@ public class Menus{
             builderDeAutosMadMax.escogerArmas(new ArmasArpones());
             break;
             case 1:
-            case 2:
-            builderDeAutosMadMax.escogerArmas(new ArmasArpones());
+            builderDeAutosMadMax.escogerArmas(new ArmasLanzallamans());
             break;
-            case 3:
+            case 2:
             builderDeAutosMadMax.escogerArmas(new ArmasCanones());
             break;
-            case 4:
+            case 3:
             builderDeAutosMadMax.escogerArmas(new ArmasSierra());
             break;
-            case 5:
+            case 4:
             builderDeAutosMadMax.escogerArmas(new ArmasMetralleta());
             break;
             default:
