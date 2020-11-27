@@ -61,7 +61,7 @@ public class main{
     public AutoMadMax desplegarMenuDiseñoFijo(){
         BuilderAutos builderDeAutosMadMax = new BuilderAutosMadMax();
 
-        Director constructorDiseñosPredeterminados = new Director(b);
+        Director constructorDiseñosPredeterminados = new Director(builderDeAutosMadMax);
 
         int indice=0;
         int dinero = 0;

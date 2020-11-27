@@ -22,44 +22,43 @@ public class Director{
     *Coche ya predefinido.
     */
     public void theRipper(){
-        /**
-        builder.Llantas(Llantas.LlantasSimple);
-        builder.Motor(Motor.Deportivo);
-        builder.Carroceria(Carroceria.CarroceriaCasual);
-        builder.Blindaje(Blindaje.BlindajeSimple);
-        builder.Armas(Armas.ArmasSierra);
+        builder.escogerLlantas(new LlantasSimple());
+        builder.escogerMotor(new MotorDeportivo());
+        builder.escogerCarroceria(new CarroceriaCasual());
+        builder.escogerBlindaje(new BlindajeSimple());
+        builder.escogerArmas(new ArmasSierra());
     }
 
     /**
     *Coche ya predefinido.
     */
     public void theFurnace(){
-        builder.Llantas(Llantas.LlantasOffRoad);
-        builder.Motor(Motor.MotorDiesel);
-        builder.Carroceria(Carroceria.CarroceriaDeportiva);
-        bilder.Blindaje(Blindaje.BlindajeSimple);
-        builder.Armas(Armas.ArmasLanzallamas);
+        builder.escogerLlantas(new LlantasOffRoad());
+        builder.escogerMotor(new MotorDiesel());
+        builder.escogerCarroceria(new CarroceriaDeportiva());
+        builder.escogerBlindaje(new BlindajeSimple());
+        builder.escogerArmas(new ArmasLanzallamans());
     }
 
     /**
     *Coche ya predefinido.
     */
     public void theDieRolla(){
-        builder.Llantas(Llantas.LlantasDeportiva);
-        builder.Motor(Motor.MotorTurbo);
-        builder.Carroceria(Carroceria.CarroceriaDeportiva);
-        builder.Blindaje(Blindaje.BlindajeSimple);
-        builder.Armas(Armas.ArmasMetralleta);
+        builder.escogerLlantas(new LlantasDeportiva());
+        builder.escogerMotor(new MotorTurbo());
+        builder.escogerCarroceria(new CarroceriaDeportiva());
+        builder.escogerBlindaje(new BlindajeSimple());
+        builder.escogerArmas(new ArmasMetralleta());
     }
 
     /**
     *Coche ya predefinido.
     */
     public void theDeathRattle(){
-        builder.Llatas(Llantas.LlantasOrugaDeTanque);
-        builder.Motor(Motor.MotorDiesel);
-        builder.Carroceria(Carroceria.CarroceriaCamion);
-        builder.Blindaje(Blindaje.BlindajeTanque);
-        builder.Armas(Armas.ArmasCañones);
+        builder.escogerLlantas(new LlantasOrugaDeTanque());
+        builder.escogerMotor(new MotorDiesel());
+        builder.escogerCarroceria(new CarroceriaCamion());
+        builder.escogerBlindaje(new BlindajeTanque());
+        builder.escogerArmas(new ArmasCanones());
     }
 }
