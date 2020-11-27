@@ -1,10 +1,9 @@
-import java.lang.module.ModuleDescriptor.Builder;
 
 public class main{
 
     public static void main(String[] args){
-        
-        
+        main m = new main();
+        m.desplegarMenuBienvenida();
     }
     
     //FALTA DOCUMENTAR
